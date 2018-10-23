@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+          font: 12px/1.5 "Microsoft yahei", arial, Simsun, sans-serif;
+          color: #333;
+          background-color: #fff;
+        }
+
+
+        .mod {
+            height: 36px;
+            border-bottom: 2px blue solid;
+            text-align: left;
+        }
+        .mod .title {
+            font: 16px/26px "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+        }
+        .mod .title span {
+            position: relative;
+            bottom: -3px;
+            float: left;
+            height: 36px;
+            line-height: 30px;
+            color: #333;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+        .mod .title .current,
+        .title span:hover {
+            color: #3983e5;
+        }
+        .mod .title .current {
+            cursor: default;
+        }
+        .mod .title .current i {
+            display: inline-block;
+        }
+        .mod .title i {
+            position: absolute;
+            left: 50%;
+            margin-left: -6px;
+            bottom: 3px;
+            display: none;
+            border-bottom: 6px solid #3983e5;
+            border-top: 0 none;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+        }
+        .mod .label-en {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            display: inline-block;
+            background-color: orange;
+            color: #fff;
+            font-weight: normal;
+            padding: 0 2px;
+            font-size: 8px;
+            line-height: 16px;
+        }
+        .mod .triangle {
+            position: absolute;
+            z-index: 1;
+            top: 17px;
+            right: 0;
+            display: inline-block;
+            border-width: 3px;
+            border-style: solid;
+            border-color:orange transparent transparent orange;
+        }
+        .mod:before, .mod:after{ 
+            display: table;
+            content: "";
+            line-height: 0px;
+        }
+        .mod .entrance-theme {
+            padding-top: 10px;            
+        }
+        .mod .entrance {
+            position: relative;
+            display: inline;
+            padding: 0 20px 15px;
+            overflow: hidden;            
+        }
+        .mod .product {
+            position: relative;
+            *zoom: 1;
+            height: 375px;
+            margin-left: 229px;
+            padding: 15px 19px 0;
+            border-left: 1px dotted #a3a3a3;
+        }
+        .mod .top
+      {
+          height: 54px;
+          background-color: #444;
+      }
+      .mod .mod-content
+      {
+          height: 312px;
+          border: 1px solid #e0e0e0;
+          border-top-width: 0px;
+          position: relative;
+          overflow: hidden;
+      }
+      .mod .left
+      {
+          width: 182px;
+          height: 312px;
+          float: left;
+          border-right: 1px dotted #a3a3a3;
+      }
+      .mod .right
+      {
+          height: 312px;
+          /* float: left; */
+          /* width: 700px; */
+          margin-left: 184px;
+          padding: 12px 17px 13px 15px
+          /* background-color: #666; */         
+      }
+      .mod .right li.active
+      {
+          width: 37px;
+          height: 16px;
+          background-color: gold;
+          border-radius: 2px;
+          /* color: #fff; */
+          /* font-size: 10px; */
+          text-align: center;
+          line-height: 16px;
+          /* font-weight: bold; */
+      }
+      .mod li.active a{
+          font-size: 10px;
+          color: blueviolet;
+      }
+      .mod .right .more{
+          position: absolute;
+          top: 12px;
+          right: 17px;
+          padding: 2px 10px;
+      }
+      .mod .right .more:hover{
+          border:1px solid darkcyan;
+          border-radius: 5px;
+      }
+      .mod .product{
+          margin-top: 8px;
+          overflow: hidden;
+      }
+      .mod .product li{
+          float: left;
+          width: 176px;
+          height: 127px;
+          margin: 0px 8px 8px 0px;
+          background-color:#888;
+      }
+    </style>
+</head>
+<body>
+    <div class="mod">
+        <h2 class="title">
+            <span class="current">
+                热门
+                <i></i>
+            </span>
+            <span>
+                门票
+            </span>
+            <span>
+                主题游
+                <i></i>
+                <b class="label-en">
+                    <em>new</em>
+                    <em class="triangle"></em>
+                </b>
+            </span>
+            <span>
+                高端游
+            </span>
+        </h2>
+    </div>
+
+    <div class="mod">
+            <div class="top"></div>
+            <div class="mod-content">
+                <div class="left"></div>
+                <div class="right">
+                    <ul>
+                       <li class="active">
+                           <a href="#">精选</a>
+                        </li>
+                       <li>
+                           <a href="#" class="more">更多</a>
+                        </li>
+                    </ul>
+                    <ul class="product" >
+                       <li>1</li>
+                       <li>2</li>
+                       <li>3</li>
+                       <li>4</li>
+                       <li>5</li>
+                       <li>6</li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
