@@ -37,6 +37,7 @@ var txtList = document.querySelectorAll(".txtItem");
 
 //初始化当前显示的图片、文本编号
 var currentNO = 0;
+const nodeLength = 8;
 
 //利用计时器间隔1秒，显示一张图片，其他图片隐藏
 function changeImg() {

@@ -1,4 +1,3 @@
-
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button {
     margin: 0;
     padding: 0;
@@ -6,147 +5,53 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
 ul{
     list-style: none;
 }
-.ShowContainer {
-	max-width: 1500px;
-    min-width: 1000px;
-    height: 300px;
-    margin: auto; 
-    position: relative;    
-}
 
-.arrow{
-	position: absolute;  
-	top: 110px; 	  
-    width: 19px;
-    height: 40px;
-    cursor: pointer;   
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index:2;  
-}
-
-
-.arrow-left{
-      left:20px;
-      background-image: url("images/arrowL.png");  
-}
-
-.arrow-right{ 	 
-	right:20px;	
-    background-image: url("images/arrowR.png");   
-}
-
-.pic{ 
-    position: absolute;
-    top:0;
-    left:0;
-    transition: opacity 1s linear;   
-    z-index: 2;
-
-}
-.opacity0{opacity:0;}
-.opacity1{opacity:1;}
-
-.txtItems{    
-    position: absolute;
-    z-index:2; 
-    left:0;
-    cursor: pointer;
-    color: #fff;
+.slider{
     width: 100%;
-    overflow: hidden;
-    transition: height 0.25s linear;
-}
-
-.shorten{
-    bottom: 0px;
-    height: 5px;
-}
-
-.heighten{
-    bottom: 0px;
-    height: 50px;
-}
-
-.txtItems:hover{
-   bottom: 0px;
-   height: 50px;
-}
-
-.txtItemsLi{
-    text-align: center;
-    width: 11.45%; 
-    padding: 0.5%;
-    margin-right: 0.05%;
-    background-color:#333; 
-    opacity: 0.5;   
-    float: left;
-    transition: opacity 0.25s linear;
-
-}
-.txtItemsLi:hover{
-    background-color: #FF8C00;
-    opacity: 1;
-
-}
-
-.currentTxt{
-    background-color: #FF8C00;
-    opacity: 1;
-}
-
-
-.txtItemsLi span{
-    display: block;
-    text-align: center;
-    font-weight: bold;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
     overflow: hidden;
 }
 
 #images{
-    position: relative;
+    /* position: relative;
+    background-color:red; */
+    width: 100%;
+   
 }
+
 #images>a{
-    transition: opacity 2s linear;
+    transition:  opacity 1s linear;
     /* display: block; */
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
 }
 .displayImg{
     /* display: block; */
     opacity: 1;
 }
-.hiddenImg{
-    /* display: none; */
-    opacity: 1;
-}
 
+.hiddenImg{
+ /* display: none; */
+ opacity: 0;
+}
 img{
     transition: opacity 1s linear;
     opacity: 1;
-    width: 100%;
-    height: 300px;
-}
-.slider{
-    width: 1500px;
-    height: 300px;
+    width:  100%;
+    height: 300px;    
     margin: 0 auto;
-    position: relative;
 }
-
-/* .slider img{
-    display: block;
-    width: 100%;
-    height: 300px;
-} */
 
 .btn{
     position: absolute;
-    top: 50%;
+    top:50%;
     width: 60px;
     height: 30px;
-    background-color: #333;
+    background-color: #000;
     opacity: 0.3;
     color: #fff;
     cursor: pointer;
@@ -155,49 +60,46 @@ img{
     background-position: center;
 }
 
-.leftButton{
-    left: 20px;
-}
 .rightButton{
-    right: 20px;
-} 
+    right:20px;
+}
 
+.leftButton{
+    left:20px;
+}
 
 .txt-box{
     width: 100%;
-    /* background-color: #333;
-    opacity: 0.5; */
-    height: 5px;
-    position: absolute;
+    /* background-color: #000; */
+    /* opacity: 0.3; */
+    height:5px;
+    position: absolute;    
     left: 0;
     bottom: 0;
     display: flex;
     z-index: 5;
-    transition: height 0.25s linear;
+    transition: height 0.1s linear 0s;
 }
 
 .txt-box:hover{
-    height: 50px;
+    height: 40px;
 }
 
 .txtItem{
     width: 12.5%;
-    /* background-color: black; */
     margin-right: 2px;
     color: #fff;
-    text-align: center;
+    text-align: center;    
+}
+.txtItem:last-child{
+    margin:0;
 }
 
-.txtItem:hover, .heighlightColor{
-    background-color: #FF8C00;
+.txtItem:hover,.heighlightColor{
+    background-color:rgb(252, 164, 2);
 }
-
-.txtItem :last-child{
-    margin: 0;
-}
-
-.txt-box .normalColor{
-    background-color: black;
+.normalColor{
+    background-color:rgba(0,0,0,0.5);
 }
 
 
