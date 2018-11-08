@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        h2:nth-of-type(odd){
+            color: #f09;
+        }
+
+        h2:nth-of-type(even){
+            color: burlywood;
+        }
+
+        p:nth-last-of-type(2){
+            font-weight: bold;
+        }
+        
+        table, tr{
+            width: 45%;
+            border-collapse: collapse;
+            border: 1px solid blueviolet;
+        }
+
+        tr,th{
+            border: 1px solid green;
+            text-align: center;
+        }
+
+        tr:nth-of-type(odd){
+            background-color: peru;
+            color: mediumseagreen;
+        }
+        tr:first-child{
+            background-color: green;
+        }
+
+        tr:nth-of-type(even){
+            background-color: navy;
+            color: brown;
+        }
+
+        tr:hover{
+            background-color: honeydew;
+        }
+    </style>
+    
+</head>
+<body>
+    <table class="reference">
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+            </tr>
+            <tr>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+            </tr>
+            <tr>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
